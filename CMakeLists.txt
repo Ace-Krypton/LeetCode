@@ -26,9 +26,6 @@ target_link_libraries(
 )
 
 # Remove Elements From Array
-include(GoogleTest)
-gtest_discover_tests(MergeSortedArray)
-
 add_executable(RemoveElement
         Easy/RemoveElement/include/solution.hpp
         Easy/RemoveElement/tests/test.cpp
@@ -40,12 +37,9 @@ target_link_libraries(
 )
 
 # Remove Duplicates From Sorted Array
-include(GoogleTest)
-gtest_discover_tests(RemoveElement)
-
 add_executable(RemoveDuplicatesFromSortedArray
         Easy/RemoveDuplicatesFromSortedArray/include/solution.hpp
-        Easy/RemoveDuplicatesFromSortedArray/tests/tests.cpp
+        Easy/RemoveDuplicatesFromSortedArray/tests/test.cpp
 )
 
 target_link_libraries(
@@ -53,4 +47,13 @@ target_link_libraries(
         GTest::gtest_main
 )
 
-gtest_discover_tests(RemoveDuplicatesFromSortedArray)
+# Remove Duplicates From Sorted Array II
+add_executable(RemoveDuplicatesFromSortedArrayII
+        Medium/RemoveDuplicatesfromSortedArrayII/include/solution.hpp
+        Medium/RemoveDuplicatesfromSortedArrayII/tests/test.cpp
+)
+
+target_link_libraries(
+        RemoveDuplicatesFromSortedArrayII
+        GTest::gtest_main
+)

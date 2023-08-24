@@ -1,11 +1,12 @@
 #include "../include/solution.hpp"
 
-class MergeSortedArrayTest : public ::testing::Test {
+class RemoveDuplicatesFromSortedArrayTest :
+        public ::testing::Test {
 protected:
-    ~MergeSortedArrayTest() override = default;
+    ~RemoveDuplicatesFromSortedArrayTest() override = default;
 };
 
-TEST_F(MergeSortedArrayTest, FirstTest) {
+TEST_F(RemoveDuplicatesFromSortedArrayTest, FirstTest) {
     std::vector<int32_t > elements = {1, 1, 2};
 
     std::size_t result =
@@ -15,7 +16,7 @@ TEST_F(MergeSortedArrayTest, FirstTest) {
     ASSERT_EQ(result, expected);
 }
 
-TEST_F(MergeSortedArrayTest, SecondTest) {
+TEST_F(RemoveDuplicatesFromSortedArrayTest, SecondTest) {
     std::vector<int32_t > elements = {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
 
     std::size_t result =
