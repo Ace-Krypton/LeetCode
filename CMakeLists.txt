@@ -68,3 +68,25 @@ target_link_libraries(
         MajorityElement
         GTest::gtest_main
 )
+
+# Rotate Array
+add_executable(RotateArray
+        Medium/RotateArray/include/solution.hpp
+        Medium/RotateArray/tests/test.cpp
+)
+
+target_link_libraries(
+        RotateArray
+        GTest::gtest_main
+)
+
+# Best Time to Buy and Sell Stock
+add_executable(BestTimeToBuyAndSellStock
+        Easy/BestTimeToBuyAndSellStock/include/solution.hpp
+        Easy/BestTimeToBuyAndSellStock/tests/test.cpp
+)
+
+target_link_libraries(
+        BestTimeToBuyAndSellStock
+        GTest::gtest_main
+)
