@@ -14,15 +14,28 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(LeetCodeJourney
+add_executable(LeetCodeJourney_MergeSortedArray
         Easy/MergeSortedArray/include/solution.hpp
         Easy/MergeSortedArray/tests/test.cpp
 )
 
 target_link_libraries(
-        LeetCodeJourney
+        LeetCodeJourney_MergeSortedArray
         GTest::gtest_main
 )
 
 include(GoogleTest)
-gtest_discover_tests(LeetCodeJourney)
+gtest_discover_tests(LeetCodeJourney_MergeSortedArray)
+
+add_executable(LeetCodeJourney_RemoveElement
+        Easy/RemoveElement/include/solution.hpp
+        Easy/RemoveElement/tests/test.cpp
+)
+
+target_link_libraries(
+        LeetCodeJourney_RemoveElement
+        GTest::gtest_main
+)
+
+include(GoogleTest)
+gtest_discover_tests(LeetCodeJourney_RemoveElement)

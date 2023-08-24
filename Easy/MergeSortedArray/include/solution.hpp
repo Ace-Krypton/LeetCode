@@ -8,7 +8,7 @@
 
 class Solution {
 public:
-    static auto merge(std::vector<int32_t> &first, int32_t m,
+    auto static merge(std::vector<int32_t> &first, int32_t m,
                       std::vector<int32_t> &second, int32_t n) -> void {
         first.erase(first.begin() + m, first.end());
         second.erase(second.begin() + n, second.end());
