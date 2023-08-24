@@ -4,6 +4,7 @@
 #include <ranges>
 #include <iostream>
 #include <algorithm>
+#include <gtest/gtest.h>
 
 class Solution {
 public:

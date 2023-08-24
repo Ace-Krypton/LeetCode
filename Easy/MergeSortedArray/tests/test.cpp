@@ -1,4 +1,3 @@
-#include <gtest/gtest.h>
 #include "../include/solution.hpp"
 
 class MergeSortedArrayTest : public ::testing::Test {

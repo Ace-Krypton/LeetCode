@@ -14,28 +14,43 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-add_executable(LeetCodeJourney_MergeSortedArray
+# Merge Sorted Array
+add_executable(MergeSortedArray
         Easy/MergeSortedArray/include/solution.hpp
         Easy/MergeSortedArray/tests/test.cpp
 )
 
 target_link_libraries(
-        LeetCodeJourney_MergeSortedArray
+        MergeSortedArray
         GTest::gtest_main
 )
 
+# Remove Elements From Array
 include(GoogleTest)
-gtest_discover_tests(LeetCodeJourney_MergeSortedArray)
+gtest_discover_tests(MergeSortedArray)
 
-add_executable(LeetCodeJourney_RemoveElement
+add_executable(RemoveElement
         Easy/RemoveElement/include/solution.hpp
         Easy/RemoveElement/tests/test.cpp
 )
 
 target_link_libraries(
-        LeetCodeJourney_RemoveElement
+        RemoveElement
         GTest::gtest_main
 )
 
+# Remove Duplicates From Sorted Array
 include(GoogleTest)
-gtest_discover_tests(LeetCodeJourney_RemoveElement)
+gtest_discover_tests(RemoveElement)
+
+add_executable(RemoveDuplicatesFromSortedArray
+        Easy/RemoveDuplicatesFromSortedArray/include/solution.hpp
+        Easy/RemoveDuplicatesFromSortedArray/tests/tests.cpp
+)
+
+target_link_libraries(
+        RemoveDuplicatesFromSortedArray
+        GTest::gtest_main
+)
+
+gtest_discover_tests(RemoveDuplicatesFromSortedArray)

@@ -1,4 +1,3 @@
-#include <gtest/gtest.h>
 #include "../include/solution.hpp"
 
 class RemoveElementTest : public ::testing::Test {
