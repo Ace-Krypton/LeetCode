@@ -57,3 +57,14 @@ target_link_libraries(
         RemoveDuplicatesFromSortedArrayII
         GTest::gtest_main
 )
+
+# Majority Element
+add_executable(MajorityElement
+        Easy/MajorityElement/include/solution.hpp
+        Easy/MajorityElement/tests/test.cpp
+)
+
+target_link_libraries(
+        MajorityElement
+        GTest::gtest_main
+)
