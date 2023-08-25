@@ -8,7 +8,7 @@
 class Solution {
 public:
     static auto max_profit(std::vector<int32_t> &prices) -> int32_t {
-        int32_t min_price = prices.at(0);
+        int32_t min_price = prices[0];
         int32_t max_profit = 0;
 
         for (int32_t price : prices) {
