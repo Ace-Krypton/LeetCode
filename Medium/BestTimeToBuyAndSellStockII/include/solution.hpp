@@ -9,7 +9,7 @@
 
 class Solution {
 public:
-    static auto max_profit(const std::vector<int32_t>& prices) -> int32_t {
+    static auto max_profit(const std::vector<int32_t> &prices) -> int32_t {
         return std::accumulate(prices.begin() + 1, prices.end(), 0,
                                [prev_price = prices.front()]
                                (int32_t total_profit, int32_t price) mutable -> __int32_t {
