@@ -101,3 +101,14 @@ target_link_libraries(
         BestTimeToBuyAndSellStockII
         GTest::gtest_main
 )
+
+# Jump Game
+add_executable(JumpGame
+        Medium/JumpGame/include/solution.hpp
+        Medium/JumpGame/tests/test.cpp
+)
+
+target_link_libraries(
+        JumpGame
+        GTest::gtest_main
+)
