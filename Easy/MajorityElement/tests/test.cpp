@@ -6,7 +6,7 @@ protected:
 };
 
 TEST_F(MajorityElement, FirstTest) {
-    std::vector<int32_t > first = {3, 2, 3};
+    std::vector<int32_t> first = {3, 2, 3};
 
     std::size_t result =
             Solution::majority_element(first);
@@ -16,7 +16,7 @@ TEST_F(MajorityElement, FirstTest) {
 }
 
 TEST_F(MajorityElement, SecondTest) {
-    std::vector<int32_t > first = {2, 2, 1, 1, 1, 2, 2};
+    std::vector<int32_t> first = {2, 2, 1, 1, 1, 2, 2};
 
     std::size_t result =
             Solution::majority_element(first);

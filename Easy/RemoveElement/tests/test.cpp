@@ -6,7 +6,7 @@ protected:
 };
 
 TEST_F(RemoveElementTest, FirstTest) {
-    std::vector<int32_t > first = {3, 2, 2, 3};
+    std::vector<int32_t> first = {3, 2, 2, 3};
     int32_t value = 3;
 
     std::size_t result =
@@ -17,7 +17,7 @@ TEST_F(RemoveElementTest, FirstTest) {
 }
 
 TEST_F(RemoveElementTest, SecondTest) {
-    std::vector<int32_t > second = {0, 1, 2, 2, 3, 0, 4, 2};
+    std::vector<int32_t>  second = {0, 1, 2, 2, 3, 0, 4, 2};
     int32_t value = 2;
 
     std::size_t result =

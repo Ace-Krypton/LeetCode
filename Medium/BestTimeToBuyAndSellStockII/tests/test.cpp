@@ -6,7 +6,7 @@ protected:
 };
 
 TEST_F(BestTimeToBuyAndSellStockII, FirstTest) {
-    std::vector<int32_t > elements = {7, 1, 5, 3, 6, 4};
+    std::vector<int32_t> elements = {7, 1, 5, 3, 6, 4};
 
     int32_t result = Solution::max_profit(elements);
     int32_t expected = 7;
@@ -15,7 +15,7 @@ TEST_F(BestTimeToBuyAndSellStockII, FirstTest) {
 }
 
 TEST_F(BestTimeToBuyAndSellStockII, SecondTest) {
-    std::vector<int32_t > elements = {1, 2, 3, 4, 5};
+    std::vector<int32_t> elements = {1, 2, 3, 4, 5};
 
     int32_t result = Solution::max_profit(elements);
     int32_t expected = 4;
@@ -24,7 +24,7 @@ TEST_F(BestTimeToBuyAndSellStockII, SecondTest) {
 }
 
 TEST_F(BestTimeToBuyAndSellStockII, ThirdTest) {
-    std::vector<int32_t > elements = {7, 6, 4, 3, 1};
+    std::vector<int32_t> elements = {7, 6, 4, 3, 1};
 
     int32_t result = Solution::max_profit(elements);
     int32_t expected = 0;

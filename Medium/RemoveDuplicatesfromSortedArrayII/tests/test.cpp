@@ -6,7 +6,7 @@ protected:
 };
 
 TEST_F(RemoveDuplicatesFromSortedArrayII, FirstTest) {
-    std::vector<int32_t > elements = {1, 1, 1, 2, 2, 3};
+    std::vector<int32_t> elements = {1, 1, 1, 2, 2, 3};
 
     std::size_t result =
             Solution::remove_duplicates(elements);
@@ -16,7 +16,7 @@ TEST_F(RemoveDuplicatesFromSortedArrayII, FirstTest) {
 }
 
 TEST_F(RemoveDuplicatesFromSortedArrayII, SecondTest) {
-    std::vector<int32_t > elements = {0, 0, 1, 1, 1, 1, 2, 3, 3};
+    std::vector<int32_t> elements = {0, 0, 1, 1, 1, 1, 2, 3, 3};
 
     std::size_t result =
             Solution::remove_duplicates(elements);

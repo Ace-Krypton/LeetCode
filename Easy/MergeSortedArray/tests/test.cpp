@@ -6,7 +6,7 @@ protected:
 };
 
 TEST_F(MergeSortedArrayTest, BasicTest) {
-    std::vector<int32_t > first = {1, 2, 3, 0, 0, 0};
+    std::vector<int32_t> first = {1, 2, 3, 0, 0, 0};
     std::vector<int32_t> second = {2, 5, 6};
 
     Solution::merge(first, 3, second, 3);
