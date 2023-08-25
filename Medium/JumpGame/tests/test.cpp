@@ -6,7 +6,7 @@ protected:
 };
 
 TEST_F(JumpGame, FirstTest) {
-    std::vector<int32_t> elements = {2, 3, 1, 1, 4};
+    std::vector<uint32_t> elements = {2, 3, 1, 1, 4};
 
     bool result = Solution::can_jump(elements);
     bool expected = true;
@@ -15,7 +15,7 @@ TEST_F(JumpGame, FirstTest) {
 }
 
 TEST_F(JumpGame, SecondTest) {
-    std::vector<int32_t> elements = {3, 2, 1, 0, 4};
+    std::vector<uint32_t> elements = {3, 2, 1, 0, 4};
 
     bool result = Solution::can_jump(elements);
     bool expected = false;
