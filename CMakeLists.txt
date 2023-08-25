@@ -90,3 +90,14 @@ target_link_libraries(
         BestTimeToBuyAndSellStock
         GTest::gtest_main
 )
+
+# Best Time to Buy and Sell Stock II
+add_executable(BestTimeToBuyAndSellStockII
+        Medium/BestTimeToBuyAndSellStockII/include/solution.hpp
+        Medium/BestTimeToBuyAndSellStockII/tests/test.cpp
+)
+
+target_link_libraries(
+        BestTimeToBuyAndSellStockII
+        GTest::gtest_main
+)
