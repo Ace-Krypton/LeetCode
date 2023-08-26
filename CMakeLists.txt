@@ -134,3 +134,13 @@ target_link_libraries(
         HIndex
         GTest::gtest_main
 )
+
+# Insert Delete GetRandom O(1)
+add_executable(InsertDeleteGetRandomOOne
+        Medium/InsertDeleteGetRandomOOne/include/solution.hpp
+)
+
+target_link_libraries(
+        InsertDeleteGetRandomOOne
+        GTest::gtest_main
+)

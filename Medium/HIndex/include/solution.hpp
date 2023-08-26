@@ -21,7 +21,7 @@ public:
         return current_h_index;
     }
 
-    static auto h_index(std::vector<int32_t>& citations) -> int32_t {
+    static auto h_index(std::vector<int32_t> &citations) -> int32_t {
         std::sort(citations.begin(), citations.end(), std::greater<>());
         return static_cast<int32_t>(std::distance(citations.begin(),
                                                   std::find_if(citations.begin(),
