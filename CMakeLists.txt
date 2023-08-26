@@ -112,3 +112,25 @@ target_link_libraries(
         JumpGame
         GTest::gtest_main
 )
+
+# Jump Game II
+add_executable(JumpGameII
+        Medium/JumpGameII/include/solution.hpp
+        Medium/JumpGameII/tests/test.cpp
+)
+
+target_link_libraries(
+        JumpGameII
+        GTest::gtest_main
+)
+
+# H-Index
+add_executable(HIndex
+        Medium/HIndex/include/solution.hpp
+        Medium/HIndex/tests/test.cpp
+)
+
+target_link_libraries(
+        HIndex
+        GTest::gtest_main
+)
