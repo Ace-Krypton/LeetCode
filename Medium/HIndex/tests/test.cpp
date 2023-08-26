@@ -6,7 +6,7 @@ protected:
 };
 
 TEST_F(HIndex, FirstTest) {
-    std::vector<int32_t> elements = {3,0,6,1,5};
+    std::vector<int32_t> elements = {3, 0, 6, 1, 5};
 
     int32_t result = Solution::h_index(elements);
     int32_t expected = 3;
