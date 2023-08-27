@@ -144,3 +144,14 @@ target_link_libraries(
         InsertDeleteGetRandomOOne
         GTest::gtest_main
 )
+
+# Product of Array Except Self
+add_executable(ProductOfArrayExceptSelf
+        Medium/ProductOfArrayExceptSelf/include/solution.hpp
+        Medium/ProductOfArrayExceptSelf/tests/test.cpp
+)
+
+target_link_libraries(
+        ProductOfArrayExceptSelf
+        GTest::gtest_main
+)
