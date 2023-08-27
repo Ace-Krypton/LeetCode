@@ -155,3 +155,14 @@ target_link_libraries(
         ProductOfArrayExceptSelf
         GTest::gtest_main
 )
+
+# Gas Station
+add_executable(GasStation
+        Medium/GasStation/include/solution.hpp
+        Medium/GasStation/tests/test.cpp
+)
+
+target_link_libraries(
+        GasStation
+        GTest::gtest_main
+)

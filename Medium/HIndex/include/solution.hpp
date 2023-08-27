@@ -1,8 +1,8 @@
 #pragma once
 
+#include <ranges>
 #include <vector>
 #include <iostream>
-#include <ranges>
 #include <algorithm>
 #include <gtest/gtest.h>
 
