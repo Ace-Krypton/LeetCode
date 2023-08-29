@@ -177,3 +177,25 @@ target_link_libraries(
         Candy
         GTest::gtest_main
 )
+
+# Tapping Rain Water
+add_executable(TappingRainWater
+        Hard/TappingRainWater/include/solution.hpp
+        Hard/TappingRainWater/tests/test.cpp
+)
+
+target_link_libraries(
+        TappingRainWater
+        GTest::gtest_main
+)
+
+# Roman to Integer
+add_executable(RomanToInteger
+        Easy/RomanToInteger/include/solution.hpp
+        Easy/RomanToInteger/tests/test.cpp
+)
+
+target_link_libraries(
+        RomanToInteger
+        GTest::gtest_main
+)
