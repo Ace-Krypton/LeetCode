@@ -199,3 +199,14 @@ target_link_libraries(
         RomanToInteger
         GTest::gtest_main
 )
+
+# Integer to Roman
+add_executable(IntegerToRoman
+        Medium/IntegerToRoman/include/solution.hpp
+        Medium/IntegerToRoman/tests/test.cpp
+)
+
+target_link_libraries(
+        IntegerToRoman
+        GTest::gtest_main
+)
