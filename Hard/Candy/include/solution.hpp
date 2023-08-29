@@ -23,11 +23,8 @@ public:
             } if (i == 0) break;
         }
 
-        std::size_t total_candies_needed =
-                std::accumulate(candies.begin(),
-                                candies.end(),
-                                std::size_t(0));
-
-        return total_candies_needed;
+        return std::accumulate(candies.begin(),
+                               candies.end(),
+                               std::size_t(0));
     }
 };
