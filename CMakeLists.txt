@@ -210,3 +210,14 @@ target_link_libraries(
         IntegerToRoman
         GTest::gtest_main
 )
+
+# Length of Last Word
+add_executable(LengthOfLastWord
+        Easy/LengthOfLastWord/include/solution.hpp
+        Easy/LengthOfLastWord/tests/test.cpp
+)
+
+target_link_libraries(
+        LengthOfLastWord
+        GTest::gtest_main
+)
