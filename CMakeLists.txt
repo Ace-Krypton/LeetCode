@@ -166,3 +166,14 @@ target_link_libraries(
         GasStation
         GTest::gtest_main
 )
+
+# Candy
+add_executable(Candy
+        Hard/Candy/include/solution.hpp
+        Hard/Candy/tests/test.cpp
+)
+
+target_link_libraries(
+        Candy
+        GTest::gtest_main
+)
