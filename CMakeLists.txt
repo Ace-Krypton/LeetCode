@@ -232,3 +232,14 @@ target_link_libraries(
         LongestCommonPrefix
         GTest::gtest_main
 )
+
+# Reverse Words in a String
+add_executable(ReverseWordsInAString
+        Medium/ReverseWordsInAString/include/solution.hpp
+        Medium/ReverseWordsInAString/tests/test.cpp
+)
+
+target_link_libraries(
+        ReverseWordsInAString
+        GTest::gtest_main
+)
