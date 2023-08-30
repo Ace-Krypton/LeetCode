@@ -221,3 +221,14 @@ target_link_libraries(
         LengthOfLastWord
         GTest::gtest_main
 )
+
+# Longest Common Prefix
+add_executable(LongestCommonPrefix
+        Easy/LongestCommonPrefix/include/solution.hpp
+        Easy/LongestCommonPrefix/tests/test.cpp
+)
+
+target_link_libraries(
+        LongestCommonPrefix
+        GTest::gtest_main
+)
