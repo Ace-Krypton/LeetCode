@@ -25,8 +25,8 @@ jobs:
 
     - name: Copy scripts
       run: |
-        cp ./scripts/run_tests.sh cmake-build-debug/
-        cp ./scripts/test_all_elf.sh cmake-build-debug/
+        cp ./Scripts/run_tests.sh cmake-build-debug/
+        cp ./Scripts/test_all_elf.sh cmake-build-debug/
     
     - name: Set up environment
       run: |
