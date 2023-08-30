@@ -1,0 +1,23 @@
+name: Run Tests
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  run-tests:
+    name: Run Test Script
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    
+    - name: Set up environment
+      run: |
+        chmod +x run_tests.sh
+        chmod +x test_all_elf.sh
+
+    - name: Run tests
+      run: ./run_tests.sh
