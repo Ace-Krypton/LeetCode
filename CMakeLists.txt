@@ -243,3 +243,25 @@ target_link_libraries(
         ReverseWordsInAString
         GTest::gtest_main
 )
+
+# Zigzag Conversion
+add_executable(ZigzagConversion
+        Medium/ZigzagConversion/include/solution.hpp
+        Medium/ZigzagConversion/tests/test.cpp
+)
+
+target_link_libraries(
+        ZigzagConversion
+        GTest::gtest_main
+)
+
+# Find the Index of the First Occurrence in a String
+add_executable(FindTheIndexOfFirstOccurrenceInString
+        Easy/FindTheIndexOfFirstOccurrenceInString/include/solution.hpp
+        Easy/FindTheIndexOfFirstOccurrenceInString/tests/test.cpp
+)
+
+target_link_libraries(
+        FindTheIndexOfFirstOccurrenceInString
+        GTest::gtest_main
+)
