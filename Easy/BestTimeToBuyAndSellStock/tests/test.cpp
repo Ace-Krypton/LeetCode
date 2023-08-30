@@ -9,7 +9,7 @@ TEST_F(BestTimeToBuyAndSellStock, FirstTest) {
     std::vector<int32_t> elements = {7, 1, 5, 3, 6, 4};
 
     int32_t result = Solution::max_profit(elements);
-    int32_t expected = 6;
+    int32_t expected = 5;
 
     ASSERT_EQ(result, expected);
 }
