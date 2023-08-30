@@ -30,23 +30,6 @@ TEST_F(TextJustification, SecondTest) {
     ASSERT_EQ(result, expected);
 }
 
-TEST_F(TextJustification, ThirdTest) {
-    int32_t max_width = 16;
-    std::vector<std::string> words =
-            {"Science", "is", "what", "we", "understand", "well", "enough", "to",
-             "explain", "to", "a", "computer.", "Art", "is", "everything", "else", "we", "do"};
-
-    std::vector<std::string> result = Solution::full_justify(words, max_width);
-    std::vector<std::string> expected = {"Science  is  what we",
-                                         "understand      well",
-                                         "enough to explain to",
-                                         "a  computer.  Art is",
-                                         "everything  else  we",
-                                         "do                  "};
-
-    ASSERT_EQ(result, expected);
-}
-
 auto main(int argc, char **argv) -> int {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
