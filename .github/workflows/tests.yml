@@ -1,4 +1,4 @@
-name: Run Tests
+name: Build and Run Tests
 
 on:
   push:
@@ -6,18 +6,33 @@ on:
       - master
 
 jobs:
-  run-tests:
-    name: Run Test Script
+  build-and-test:
+    name: Build and Test
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
     
+    - name: Set up CMake
+      run: |
+        mkdir -p cmake-build-debug
+        cd cmake-build-debug
+        cmake ..
+    
+    - name: Build project
+      run: cmake --build cmake-build-debug --config Debug
+
+    - name: Copy scripts
+      run: |
+        cp ../scripts/run_tests.sh cmake-build-debug/
+        cp ../scripts/test_all_elf.sh cmake-build-debug/
+    
     - name: Set up environment
       run: |
-        chmod +x run_tests.sh
-        chmod +x test_all_elf.sh
-
+        chmod +x cmake-build-debug/run_tests.sh
+        chmod +x cmake-build-debug/test_all_elf.sh
+    
     - name: Run tests
+      working-directory: cmake-build-debug
       run: ./run_tests.sh
