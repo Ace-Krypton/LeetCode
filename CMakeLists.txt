@@ -265,3 +265,14 @@ target_link_libraries(
         FindTheIndexOfFirstOccurrenceInString
         GTest::gtest_main
 )
+
+# Text Justification
+add_executable(TextJustification
+        Hard/TextJustification/include/solution.hpp
+        Hard/TextJustification/tests/test.cpp
+)
+
+target_link_libraries(
+        TextJustification
+        GTest::gtest_main
+)

@@ -9,8 +9,8 @@ TEST_F(FindTheIndexOfFirstOccurrenceInString, FirstTest) {
     std::string haystack = "sadbutsad";
     std::string needle = "sad";
 
-    int32_t result = Solution::str_str(haystack, needle);
-    int32_t expected = 0;
+    std::size_t result = Solution::str_str(haystack, needle);
+    std::size_t expected = 0;
 
     ASSERT_EQ(result, expected);
 }
@@ -19,8 +19,8 @@ TEST_F(FindTheIndexOfFirstOccurrenceInString, SecondTest) {
     std::string haystack = "leetcode";
     std::string needle = "leeto";
 
-    int32_t result = Solution::str_str(haystack, needle);
-    int32_t expected = -1;
+    std::size_t result = Solution::str_str(haystack, needle);
+    std::size_t expected = -1;
 
     ASSERT_EQ(result, expected);
 }
