@@ -287,3 +287,14 @@ target_link_libraries(
         ValidPalindrome
         GTest::gtest_main
 )
+
+# Is Subsequence
+add_executable(IsSubsequence
+        Easy/IsSubsequence/include/solution.hpp
+        Easy/IsSubsequence/tests/test.cpp
+)
+
+target_link_libraries(
+        IsSubsequence
+        GTest::gtest_main
+)
