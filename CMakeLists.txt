@@ -276,3 +276,14 @@ target_link_libraries(
         TextJustification
         GTest::gtest_main
 )
+
+# Valid Palindrome
+add_executable(ValidPalindrome
+        Easy/ValidPalindrome/include/solution.hpp
+        Easy/ValidPalindrome/tests/test.cpp
+)
+
+target_link_libraries(
+        ValidPalindrome
+        GTest::gtest_main
+)
