@@ -298,3 +298,14 @@ target_link_libraries(
         IsSubsequence
         GTest::gtest_main
 )
+
+# Jewels and Stones
+add_executable(JewelsAndStones
+        Easy/JewelsAndStones/include/solution.hpp
+        Easy/JewelsAndStones/tests/test.cpp
+)
+
+target_link_libraries(
+        JewelsAndStones
+        GTest::gtest_main
+)
