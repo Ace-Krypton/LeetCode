@@ -24,10 +24,10 @@ TEST_F(ValidPalindrome, SecondTest) {
 }
 
 TEST_F(ValidPalindrome, ThirdTest) {
-    std::string sentence = " ";
+    std::string sentence = ",; W;:GlG:;l ;,";
 
     bool result = Solution::is_palindrome(sentence);
-    bool expected = true;
+    bool expected = false;
 
     ASSERT_EQ(result, expected);
 }

@@ -20,7 +20,7 @@ public:
 
         if (word.length() % 2 == 1) {
             for (std::size_t i = word.length() / 2,
-                    j = word.length() / 2; i != 0; --i, ++j) {
+                    j = word.length() / 2; j < word.length(); --i, ++j) {
                 if (word[i] != word[j]) return false;
             }
         } else {
