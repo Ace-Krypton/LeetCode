@@ -353,3 +353,14 @@ target_link_libraries(
         ThreeSum
         GTest::gtest_main
 )
+
+# Minimum Size SubArray Sum
+add_executable(MinSizeSubArraySum
+        Medium/MinSizeSubArraySum/include/solution.hpp
+        Medium/MinSizeSubArraySum/tests/test.cpp
+)
+
+target_link_libraries(
+        MinSizeSubArraySum
+        GTest::gtest_main
+)

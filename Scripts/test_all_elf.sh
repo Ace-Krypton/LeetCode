@@ -29,3 +29,4 @@ TwoSumII
 TwoSum
 ContainerWithMostWater
 ThreeSum
+MinSizeSubArraySum
