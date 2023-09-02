@@ -22,3 +22,10 @@ RemoveDuplicatesFromSortedArray
 RemoveDuplicatesFromSortedArrayII
 LeetCodeJourney
 JumpGameII
+ValidPalindrome
+IsSubsequence
+JewelsAndStones
+TwoSumII
+TwoSum
+ContainerWithMostWater
+ThreeSum
