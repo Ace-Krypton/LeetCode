@@ -331,3 +331,14 @@ target_link_libraries(
         TwoSum
         GTest::gtest_main
 )
+
+# Container With Most Water
+add_executable(ContainerWithMostWater
+        Medium/ContainerWithMostWater/include/solution.hpp
+        Medium/ContainerWithMostWater/tests/test.cpp
+)
+
+target_link_libraries(
+        ContainerWithMostWater
+        GTest::gtest_main
+)
