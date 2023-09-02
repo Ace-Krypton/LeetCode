@@ -309,3 +309,25 @@ target_link_libraries(
         JewelsAndStones
         GTest::gtest_main
 )
+
+# Two Sum II - Input Array Is Sorted
+add_executable(TwoSumII
+        Medium/TwoSumII/include/solution.hpp
+        Medium/TwoSumII/tests/test.cpp
+)
+
+target_link_libraries(
+        TwoSumII
+        GTest::gtest_main
+)
+
+# Two Sum
+add_executable(TwoSum
+        Easy/TwoSum/include/solution.hpp
+        Easy/TwoSum/tests/test.cpp
+)
+
+target_link_libraries(
+        TwoSum
+        GTest::gtest_main
+)
