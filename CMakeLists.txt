@@ -342,3 +342,14 @@ target_link_libraries(
         ContainerWithMostWater
         GTest::gtest_main
 )
+
+# Three Sum
+add_executable(ThreeSum
+        Medium/ThreeSum/include/solution.hpp
+        Medium/ThreeSum/tests/test.cpp
+)
+
+target_link_libraries(
+        ThreeSum
+        GTest::gtest_main
+)
