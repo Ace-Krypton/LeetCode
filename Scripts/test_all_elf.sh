@@ -32,3 +32,4 @@ ThreeSum
 MinSizeSubArraySum
 LongestSubstringWithoutRepeatingCharacters
 LongestPalindromicSubstring
+GenerateParentheses

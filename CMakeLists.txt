@@ -386,3 +386,14 @@ target_link_libraries(
         LongestPalindromicSubstring
         GTest::gtest_main
 )
+
+# Generate Parentheses
+add_executable(GenerateParentheses
+        Medium/GenerateParentheses/include/solution.hpp
+        Medium/GenerateParentheses/tests/test.cpp
+)
+
+target_link_libraries(
+        GenerateParentheses
+        GTest::gtest_main
+)
