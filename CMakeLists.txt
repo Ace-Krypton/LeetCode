@@ -397,3 +397,14 @@ target_link_libraries(
         GenerateParentheses
         GTest::gtest_main
 )
+
+# Climbing Stairs
+add_executable(ClimbingStairs
+        Easy/ClimbingStairs/include/solution.hpp
+        Easy/ClimbingStairs/tests/test.cpp
+)
+
+target_link_libraries(
+        ClimbingStairs
+        GTest::gtest_main
+)
