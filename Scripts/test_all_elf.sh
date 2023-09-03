@@ -34,3 +34,5 @@ LongestSubstringWithoutRepeatingCharacters
 LongestPalindromicSubstring
 GenerateParentheses
 ClimbingStairs
+SingleNumber
+RansomNote

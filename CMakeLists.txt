@@ -408,3 +408,25 @@ target_link_libraries(
         ClimbingStairs
         GTest::gtest_main
 )
+
+# Ransom Note
+add_executable(RansomNote
+        Easy/RansomNote/include/solution.hpp
+        Easy/RansomNote/tests/test.cpp
+)
+
+target_link_libraries(
+        RansomNote
+        GTest::gtest_main
+)
+
+# SingleNumber
+add_executable(SingleNumber
+        Easy/SingleNumber/include/solution.hpp
+        Easy/SingleNumber/tests/test.cpp
+)
+
+target_link_libraries(
+        SingleNumber
+        GTest::gtest_main
+)
