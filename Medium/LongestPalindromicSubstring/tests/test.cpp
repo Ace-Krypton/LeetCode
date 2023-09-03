@@ -9,7 +9,7 @@ TEST_F(LongestPalindromicSubstring, FirstTest) {
     std::string element = "babad";
 
     std::string result = Solution::longest_palindrome(element);
-    std::string expected = "bab";
+    std::string expected = "aba";
 
     ASSERT_EQ(result, expected);
 }
