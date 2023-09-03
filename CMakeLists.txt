@@ -364,3 +364,14 @@ target_link_libraries(
         MinSizeSubArraySum
         GTest::gtest_main
 )
+
+# Longest Substring Without Repeating Characters
+add_executable(LongestSubstringWithoutRepeatingCharacters
+        Medium/LongestSubstringWithoutRepeatingCharacters/include/solution.hpp
+        Medium/LongestSubstringWithoutRepeatingCharacters/tests/test.cpp
+)
+
+target_link_libraries(
+        LongestSubstringWithoutRepeatingCharacters
+        GTest::gtest_main
+)
