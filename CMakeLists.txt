@@ -375,3 +375,14 @@ target_link_libraries(
         LongestSubstringWithoutRepeatingCharacters
         GTest::gtest_main
 )
+
+# Longest Palindromic Substring
+add_executable(LongestPalindromicSubstring
+        Medium/LongestPalindromicSubstring/include/solution.hpp
+        Medium/LongestPalindromicSubstring/tests/test.cpp
+)
+
+target_link_libraries(
+        LongestPalindromicSubstring
+        GTest::gtest_main
+)
