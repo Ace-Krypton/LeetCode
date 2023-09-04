@@ -37,3 +37,4 @@ ClimbingStairs
 SingleNumber
 RansomNote
 IsomorphicStrings
+WordPattern
