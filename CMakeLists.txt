@@ -441,3 +441,14 @@ target_link_libraries(
         IsomorphicStrings
         GTest::gtest_main
 )
+
+# Word Pattern
+add_executable(WordPattern
+        Easy/WordPattern/include/solution.hpp
+        Easy/WordPattern/tests/test.cpp
+)
+
+target_link_libraries(
+        WordPattern
+        GTest::gtest_main
+)
