@@ -38,3 +38,4 @@ SingleNumber
 RansomNote
 IsomorphicStrings
 WordPattern
+ValidAnagram

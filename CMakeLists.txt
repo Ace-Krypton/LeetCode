@@ -452,3 +452,14 @@ target_link_libraries(
         WordPattern
         GTest::gtest_main
 )
+
+# Valid Anagram
+add_executable(ValidAnagram
+        Easy/ValidAnagram/include/solution.hpp
+        Easy/ValidAnagram/tests/test.cpp
+)
+
+target_link_libraries(
+        ValidAnagram
+        GTest::gtest_main
+)
