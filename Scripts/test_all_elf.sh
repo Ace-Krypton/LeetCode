@@ -39,3 +39,4 @@ RansomNote
 IsomorphicStrings
 WordPattern
 ValidAnagram
+GroupAnagrams

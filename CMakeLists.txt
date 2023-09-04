@@ -463,3 +463,14 @@ target_link_libraries(
         ValidAnagram
         GTest::gtest_main
 )
+
+# Group Anagrams
+add_executable(GroupAnagrams
+        Medium/GroupAnagrams/include/solution.hpp
+        Medium/GroupAnagrams/tests/test.cpp
+)
+
+target_link_libraries(
+        GroupAnagrams
+        GTest::gtest_main
+)
