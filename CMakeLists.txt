@@ -430,3 +430,14 @@ target_link_libraries(
         SingleNumber
         GTest::gtest_main
 )
+
+# Isomorphic Strings
+add_executable(IsomorphicStrings
+        Easy/IsomorphicStrings/include/solution.hpp
+        Easy/IsomorphicStrings/tests/test.cpp
+)
+
+target_link_libraries(
+        IsomorphicStrings
+        GTest::gtest_main
+)
