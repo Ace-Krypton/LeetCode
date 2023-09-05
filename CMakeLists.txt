@@ -420,7 +420,7 @@ target_link_libraries(
         GTest::gtest_main
 )
 
-# SingleNumber
+# Single Number
 add_executable(SingleNumber
         Easy/SingleNumber/include/solution.hpp
         Easy/SingleNumber/tests/test.cpp
@@ -472,5 +472,16 @@ add_executable(GroupAnagrams
 
 target_link_libraries(
         GroupAnagrams
+        GTest::gtest_main
+)
+
+# Happy Number
+add_executable(HappyNumber
+        Easy/HappyNumber/include/solution.hpp
+        Easy/HappyNumber/tests/test.cpp
+)
+
+target_link_libraries(
+        HappyNumber
         GTest::gtest_main
 )
