@@ -6,18 +6,30 @@ protected:
 };
 
 TEST_F(ContainsDuplicateII, FirstTest) {
-    int32_t n = 19;
+    std::vector<int32_t> nums = {1, 2, 3, 1};
+    int32_t k = 3;
 
-    bool result = Solution::contains_nearby_duplicate(n);
+    bool result = Solution::contains_nearby_duplicate(nums, k);
     bool expected = true;
 
     ASSERT_EQ(result, expected);
 }
 
 TEST_F(ContainsDuplicateII, SecondTest) {
-    int32_t n = 2;
+    std::vector<int32_t> nums = {1, 0, 1, 1};
+    int32_t k = 1;
 
-    bool result = Solution::contains_nearby_duplicate(n);
+    bool result = Solution::contains_nearby_duplicate(nums, k);
+    bool expected = true;
+
+    ASSERT_EQ(result, expected);
+}
+
+TEST_F(ContainsDuplicateII, ThirdTest) {
+    std::vector<int32_t> nums = {1, 2, 3, 1, 2, 3};
+    int32_t k = 2;
+
+    bool result = Solution::contains_nearby_duplicate(nums, k);
     bool expected = false;
 
     ASSERT_EQ(result, expected);

@@ -485,3 +485,14 @@ target_link_libraries(
         HappyNumber
         GTest::gtest_main
 )
+
+# Contains Duplicate II
+add_executable(ContainsDuplicateII
+        Easy/ContainsDuplicateII/include/solution.hpp
+        Easy/ContainsDuplicateII/tests/test.cpp
+)
+
+target_link_libraries(
+        ContainsDuplicateII
+        GTest::gtest_main
+)
