@@ -40,3 +40,5 @@ IsomorphicStrings
 WordPattern
 ValidAnagram
 GroupAnagrams
+ContainsDuplicateII
+HappyNumber
