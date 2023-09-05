@@ -42,3 +42,4 @@ ValidAnagram
 GroupAnagrams
 ContainsDuplicateII
 HappyNumber
+LongestConsecutiveSequence

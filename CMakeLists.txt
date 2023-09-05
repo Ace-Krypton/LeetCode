@@ -496,3 +496,14 @@ target_link_libraries(
         ContainsDuplicateII
         GTest::gtest_main
 )
+
+# Longest Consecutive Sequence
+add_executable(LongestConsecutiveSequence
+        Medium/LongestConsecutiveSequence/include/solution.hpp
+        Medium/LongestConsecutiveSequence/tests/test.cpp
+)
+
+target_link_libraries(
+        LongestConsecutiveSequence
+        GTest::gtest_main
+)
