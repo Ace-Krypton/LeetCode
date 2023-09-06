@@ -45,3 +45,4 @@ HappyNumber
 LongestConsecutiveSequence
 SummaryRanges
 MergeIntervals
+InsertInterval

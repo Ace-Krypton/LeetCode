@@ -529,3 +529,14 @@ target_link_libraries(
         MergeIntervals
         GTest::gtest_main
 )
+
+# Insert Interval
+add_executable(InsertInterval
+        Medium/InsertInterval/include/solution.hpp
+        Medium/InsertInterval/tests/test.cpp
+)
+
+target_link_libraries(
+        InsertInterval
+        GTest::gtest_main
+)
