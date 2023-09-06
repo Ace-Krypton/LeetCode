@@ -540,3 +540,14 @@ target_link_libraries(
         InsertInterval
         GTest::gtest_main
 )
+
+# Minimum Number of Arrows to Burst Balloons
+add_executable(MinimumNumberOfArrowsToBurstBalloons
+        Medium/MinimumNumberOfArrowsToBurstBalloons/include/solution.hpp
+        Medium/MinimumNumberOfArrowsToBurstBalloons/tests/test.cpp
+)
+
+target_link_libraries(
+        MinimumNumberOfArrowsToBurstBalloons
+        GTest::gtest_main
+)
