@@ -518,3 +518,14 @@ target_link_libraries(
         SummaryRanges
         GTest::gtest_main
 )
+
+# Merge Intervals
+add_executable(MergeIntervals
+        Medium/MergeIntervals/include/solution.hpp
+        Medium/MergeIntervals/tests/test.cpp
+)
+
+target_link_libraries(
+        MergeIntervals
+        GTest::gtest_main
+)

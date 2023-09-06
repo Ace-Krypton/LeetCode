@@ -44,3 +44,4 @@ ContainsDuplicateII
 HappyNumber
 LongestConsecutiveSequence
 SummaryRanges
+MergeIntervals
