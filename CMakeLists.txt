@@ -551,3 +551,14 @@ target_link_libraries(
         MinimumNumberOfArrowsToBurstBalloons
         GTest::gtest_main
 )
+
+# Get Combinations
+add_executable(GetCombinations
+        Easy/GetCombinations/include/solution.hpp
+        Easy/GetCombinations/tests/test.cpp
+)
+
+target_link_libraries(
+        GetCombinations
+        GTest::gtest_main
+)
