@@ -507,3 +507,14 @@ target_link_libraries(
         LongestConsecutiveSequence
         GTest::gtest_main
 )
+
+# Summary Ranges
+add_executable(SummaryRanges
+        Easy/SummaryRanges/include/solution.hpp
+        Easy/SummaryRanges/tests/test.cpp
+)
+
+target_link_libraries(
+        SummaryRanges
+        GTest::gtest_main
+)

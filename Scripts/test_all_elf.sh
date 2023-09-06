@@ -43,3 +43,4 @@ GroupAnagrams
 ContainsDuplicateII
 HappyNumber
 LongestConsecutiveSequence
+SummaryRanges
