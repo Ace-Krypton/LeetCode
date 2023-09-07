@@ -15,13 +15,21 @@ TEST_F(RotateArray, FirstTest) {
 }
 
 TEST_F(RotateArray, SecondTest) {
-    std::vector<int32_t> elements = {-1, -100, 3, 99};
-    std::size_t steps = 2;
+    std::string path = "/../";
 
-    Solution::rotate(elements, steps);
+    std::string result = Solution::simplify_path(path);
 
-    std::vector<int32_t> expected = {3, 99, -1, -100};
-    ASSERT_EQ(elements, expected);
+    std::string expected = "/";
+    ASSERT_EQ(result, expected);
+}
+
+TEST_F(RotateArray, ThirdTest) {
+    std::string path = "/home//foo/";
+
+    std::string result = Solution::simplify_path(path);
+
+    std::string expected = "/home/foo";
+    ASSERT_EQ(result, expected);
 }
 
 auto main(int argc, char **argv) -> int {
