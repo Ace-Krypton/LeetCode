@@ -573,3 +573,14 @@ target_link_libraries(
         ValidParentheses
         GTest::gtest_main
 )
+
+# Simplify Path
+add_executable(SimplifyPath
+        Medium/SimplifyPath/include/solution.hpp
+        Medium/SimplifyPath/tests/test.cpp
+)
+
+target_link_libraries(
+        SimplifyPath
+        GTest::gtest_main
+)

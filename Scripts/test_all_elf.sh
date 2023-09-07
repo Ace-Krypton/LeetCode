@@ -45,7 +45,6 @@ HappyNumber
 LongestConsecutiveSequence
 SummaryRanges
 MergeIntervals
-InsertInterval
 MinimumNumberOfArrowsToBurstBalloons
 GetCombinations
 ValidParentheses

@@ -27,7 +27,7 @@ public:
 
 private:
     static auto compare(const std::vector<int32_t> &a,
-                                  const std::vector<int32_t> &b) -> bool {
+                        const std::vector<int32_t> &b) -> bool {
         return a[0] < b[0];
     }
 };
