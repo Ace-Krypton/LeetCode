@@ -562,3 +562,14 @@ target_link_libraries(
         GetCombinations
         GTest::gtest_main
 )
+
+# Valid Parentheses
+add_executable(ValidParentheses
+        Easy/ValidParentheses/include/solution.hpp
+        Easy/ValidParentheses/tests/test.cpp
+)
+
+target_link_libraries(
+        ValidParentheses
+        GTest::gtest_main
+)
