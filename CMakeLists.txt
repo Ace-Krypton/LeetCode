@@ -584,3 +584,13 @@ target_link_libraries(
         SimplifyPath
         GTest::gtest_main
 )
+
+# Simplify Path
+add_executable(MinStack
+        Medium/MinStack/include/solution.hpp
+)
+
+target_link_libraries(
+        MinStack
+        GTest::gtest_main
+)
