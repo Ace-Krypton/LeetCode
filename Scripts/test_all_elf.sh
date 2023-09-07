@@ -48,3 +48,4 @@ MergeIntervals
 MinimumNumberOfArrowsToBurstBalloons
 GetCombinations
 ValidParentheses
+SimplifyPath
