@@ -26,7 +26,7 @@ public:
     }
 
 private:
-    static constexpr auto compare(const std::vector<int32_t> &a,
+    static auto compare(const std::vector<int32_t> &a,
                                   const std::vector<int32_t> &b) -> bool {
         return a[0] < b[0];
     }

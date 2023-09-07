@@ -48,3 +48,4 @@ MergeIntervals
 InsertInterval
 MinimumNumberOfArrowsToBurstBalloons
 GetCombinations
+ValidParentheses
