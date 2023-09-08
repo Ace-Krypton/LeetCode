@@ -594,3 +594,14 @@ target_link_libraries(
         MinStack
         GTest::gtest_main
 )
+
+# Evaluate Reverse Polish Notation
+add_executable(EvaluateReversePolishNotation
+        Medium/EvaluateReversePolishNotation/include/solution.hpp
+        Medium/EvaluateReversePolishNotation/tests/test.cpp
+)
+
+target_link_libraries(
+        EvaluateReversePolishNotation
+        GTest::gtest_main
+)

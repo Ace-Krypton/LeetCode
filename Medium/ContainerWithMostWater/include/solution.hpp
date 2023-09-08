@@ -22,7 +22,7 @@ public:
     static auto max_area(std::vector<int32_t> &height) -> int32_t {
         int32_t output = 0;
         int32_t left = 0;
-        int32_t right = height.size() - 1;
+        auto right = static_cast<int32_t>(height.size() - 1);
 
         while (left < right) {
             output = std::max(output,
