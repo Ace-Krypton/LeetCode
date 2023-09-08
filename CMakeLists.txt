@@ -605,3 +605,14 @@ target_link_libraries(
         EvaluateReversePolishNotation
         GTest::gtest_main
 )
+
+# Basic Calculator
+add_executable(BasicCalculator
+        Hard/BasicCalculator/include/solution.hpp
+        Hard/BasicCalculator/tests/test.cpp
+)
+
+target_link_libraries(
+        BasicCalculator
+        GTest::gtest_main
+)

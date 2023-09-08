@@ -50,3 +50,4 @@ GetCombinations
 ValidParentheses
 SimplifyPath
 EvaluateReversePolishNotation
+BasicCalculator
