@@ -616,3 +616,13 @@ target_link_libraries(
         BasicCalculator
         GTest::gtest_main
 )
+
+# Linked List Cycle
+add_executable(LinkedListCycle
+        Easy/LinkedListCycle/include/solution.hpp
+)
+
+target_link_libraries(
+        LinkedListCycle
+        GTest::gtest_main
+)
