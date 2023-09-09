@@ -626,3 +626,14 @@ target_link_libraries(
         LinkedListCycle
         GTest::gtest_main
 )
+
+# Add Two Numbers
+add_executable(AddTwoNumbers
+        Medium/AddTwoNumbers/include/solution.hpp
+        Medium/AddTwoNumbers/tests/test.cpp
+)
+
+target_link_libraries(
+        AddTwoNumbers
+        GTest::gtest_main
+)
