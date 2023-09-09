@@ -637,3 +637,14 @@ target_link_libraries(
         AddTwoNumbers
         GTest::gtest_main
 )
+
+# Merge Two Sorted Lists
+add_executable(MergeTwoSortedLists
+        Easy/MergeTwoSortedLists/include/solution.hpp
+        Easy/MergeTwoSortedLists/tests/test.cpp
+)
+
+target_link_libraries(
+        MergeTwoSortedLists
+        GTest::gtest_main
+)
