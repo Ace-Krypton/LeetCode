@@ -1,0 +1,8 @@
+//
+// Created by draco on 9/12/23.
+//
+
+#ifndef LEETCODEJOURNEY_SOLUTION_HPP
+#define LEETCODEJOURNEY_SOLUTION_HPP
+
+#endif //LEETCODEJOURNEY_SOLUTION_HPP
