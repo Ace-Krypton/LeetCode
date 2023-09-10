@@ -668,3 +668,14 @@ target_link_libraries(
         ReverseLinkedListII
         GTest::gtest_main
 )
+
+# Palindrome Linked List
+add_executable(PalindromeLinkedList
+        Easy/PalindromeLinkedList/include/solution.hpp
+        Easy/PalindromeLinkedList/tests/test.cpp
+)
+
+target_link_libraries(
+        PalindromeLinkedList
+        GTest::gtest_main
+)
