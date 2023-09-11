@@ -13,7 +13,7 @@ struct Node {
 
 class Solution {
 public:
-    static auto copy_random_list(Node* head) -> Node* {
+    [[maybe_unused]] static auto copy_random_list(Node* head) -> Node* {
         Node *temp = head;
         std::unordered_map<Node*, Node*> mappings;
 

@@ -658,3 +658,13 @@ target_link_libraries(
         CopyListWithRandomPointer
         GTest::gtest_main
 )
+
+# Reverse Linked List II
+add_executable(ReverseLinkedListII
+        Medium/ReverseLinkedListII/include/solution.hpp
+)
+
+target_link_libraries(
+        ReverseLinkedListII
+        GTest::gtest_main
+)
