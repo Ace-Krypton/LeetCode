@@ -648,3 +648,13 @@ target_link_libraries(
         MergeTwoSortedLists
         GTest::gtest_main
 )
+
+# Copy List with Random Pointer
+add_executable(CopyListWithRandomPointer
+        Medium/CopyListWithRandomPointer/include/solution.hpp
+)
+
+target_link_libraries(
+        CopyListWithRandomPointer
+        GTest::gtest_main
+)
