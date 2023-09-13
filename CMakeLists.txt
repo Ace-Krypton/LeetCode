@@ -690,3 +690,14 @@ target_link_libraries(
         RemoveNthNodeFromEndOfList
         GTest::gtest_main
 )
+
+# Remove Duplicates from Sorted List II
+add_executable(RemoveDuplicatesFromSortedListII
+        Medium/RemoveDuplicatesFromSortedListII/include/solution.hpp
+        Medium/RemoveDuplicatesFromSortedListII/tests/test.cpp
+)
+
+target_link_libraries(
+        RemoveDuplicatesFromSortedListII
+        GTest::gtest_main
+)
