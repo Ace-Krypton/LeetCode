@@ -679,3 +679,14 @@ target_link_libraries(
         PalindromeLinkedList
         GTest::gtest_main
 )
+
+# Remove Nth Node From End Of List
+add_executable(RemoveNthNodeFromEndOfList
+        Medium/RemoveNthNodeFromEndOfList/include/solution.hpp
+        Medium/RemoveNthNodeFromEndOfList/tests/test.cpp
+)
+
+target_link_libraries(
+        RemoveNthNodeFromEndOfList
+        GTest::gtest_main
+)
