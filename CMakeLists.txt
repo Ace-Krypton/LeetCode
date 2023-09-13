@@ -701,3 +701,14 @@ target_link_libraries(
         RemoveDuplicatesFromSortedListII
         GTest::gtest_main
 )
+
+# Rotate List
+add_executable(RotateList
+        Medium/RotateList/include/solution.hpp
+        Medium/RotateList/tests/test.cpp
+)
+
+target_link_libraries(
+        RotateList
+        GTest::gtest_main
+)
