@@ -712,3 +712,14 @@ target_link_libraries(
         RotateList
         GTest::gtest_main
 )
+
+# Partition List
+add_executable(PartitionList
+        Medium/PartitionList/include/solution.hpp
+        Medium/PartitionList/tests/test.cpp
+)
+
+target_link_libraries(
+        PartitionList
+        GTest::gtest_main
+)
