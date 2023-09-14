@@ -734,3 +734,14 @@ target_link_libraries(
         LRUCache
         GTest::gtest_main
 )
+
+# Remove Duplicates from Sorted List
+add_executable(RemoveDuplicatesFromSortedList
+        Easy/RemoveDuplicatesFromSortedList/include/solution.hpp
+        Easy/RemoveDuplicatesFromSortedList/tests/test.cpp
+)
+
+target_link_libraries(
+        RemoveDuplicatesFromSortedList
+        GTest::gtest_main
+)
