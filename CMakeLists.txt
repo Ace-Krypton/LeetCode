@@ -723,3 +723,14 @@ target_link_libraries(
         PartitionList
         GTest::gtest_main
 )
+
+# LRU Cache
+add_executable(LRUCache
+        Medium/LRUCache/include/solution.hpp
+        Medium/LRUCache/tests/test.cpp
+)
+
+target_link_libraries(
+        LRUCache
+        GTest::gtest_main
+)
