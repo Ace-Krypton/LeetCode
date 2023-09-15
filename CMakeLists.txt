@@ -745,3 +745,14 @@ target_link_libraries(
         RemoveDuplicatesFromSortedList
         GTest::gtest_main
 )
+
+# Maximum Depth of Binary Tree
+add_executable(MaximumDepthOfBinaryTree
+        Easy/MaximumDepthOfBinaryTree/include/solution.hpp
+        Easy/MaximumDepthOfBinaryTree/tests/test.cpp
+)
+
+target_link_libraries(
+        MaximumDepthOfBinaryTree
+        GTest::gtest_main
+)
