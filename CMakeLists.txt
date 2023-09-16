@@ -756,3 +756,14 @@ target_link_libraries(
         MaximumDepthOfBinaryTree
         GTest::gtest_main
 )
+
+# Same Tree
+add_executable(SameTree
+        Easy/SameTree/include/solution.hpp
+        Easy/SameTree/tests/test.cpp
+)
+
+target_link_libraries(
+        SameTree
+        GTest::gtest_main
+)
