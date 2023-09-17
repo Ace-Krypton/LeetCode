@@ -767,3 +767,14 @@ target_link_libraries(
         SameTree
         GTest::gtest_main
 )
+
+# Invert Binary Tree
+add_executable(InvertBinaryTree
+        Easy/InvertBinaryTree/include/solution.hpp
+        Easy/InvertBinaryTree/tests/test.cpp
+)
+
+target_link_libraries(
+        InvertBinaryTree
+        GTest::gtest_main
+)
