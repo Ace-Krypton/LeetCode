@@ -778,3 +778,14 @@ target_link_libraries(
         InvertBinaryTree
         GTest::gtest_main
 )
+
+# Symmetric Tree
+add_executable(SymmetricTree
+        Easy/SymmetricTree/include/solution.hpp
+        Easy/SymmetricTree/tests/test.cpp
+)
+
+target_link_libraries(
+        SymmetricTree
+        GTest::gtest_main
+)

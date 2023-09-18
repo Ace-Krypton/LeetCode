@@ -7,9 +7,9 @@
 
 class LRUCache {
 public:
-    explicit LRUCache(std::uint32_t capacity) : _cache_size(capacity) { };
+    explicit LRUCache(const std::uint32_t capacity) : _cache_size(capacity) { };
 
-    auto get(int32_t key) -> int32_t {
+    auto get(const int32_t key) -> int32_t {
         if (auto it = _pair.find(key); it != _pair.end()) {
             _doubly_list.splice(_doubly_list.begin(),
                                 _doubly_list, it->second);
@@ -19,7 +19,7 @@ public:
         return -1;
     }
 
-    auto put(int32_t key, int32_t value) -> void {
+    auto put(const int32_t key, const int32_t value) -> void {
         if (auto it = _pair.find(key); it != _pair.end()) {
             it->second->second = value;
             _doubly_list.splice(_doubly_list.begin(),
