@@ -789,3 +789,14 @@ target_link_libraries(
         SymmetricTree
         GTest::gtest_main
 )
+
+add_executable(ConstructBinaryTreeFromPreorderAndInorderTraversal
+        Medium/ConstructBinaryTreeFromPreorderAndInorderTraversal/include/solution.hpp
+        Medium/ConstructBinaryTreeFromPreorderAndInorderTraversal/tests/test.cpp
+)
+
+# Construct Binary Tree from Preorder and Inorder Traversal
+target_link_libraries(
+        ConstructBinaryTreeFromPreorderAndInorderTraversal
+        GTest::gtest_main
+)

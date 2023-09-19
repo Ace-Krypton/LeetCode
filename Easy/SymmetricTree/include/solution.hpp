@@ -6,7 +6,7 @@
 #include <gtest/gtest.h>
 
 struct TreeNode {
-    int32_t value;
+    const int32_t value;
     TreeNode *left;
     TreeNode *right;
     explicit TreeNode(int32_t value) :
