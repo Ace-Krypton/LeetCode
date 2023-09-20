@@ -790,13 +790,24 @@ target_link_libraries(
         GTest::gtest_main
 )
 
+# Construct Binary Tree from Preorder and Inorder Traversal
 add_executable(ConstructBinaryTreeFromPreorderAndInorderTraversal
         Medium/ConstructBinaryTreeFromPreorderAndInorderTraversal/include/solution.hpp
         Medium/ConstructBinaryTreeFromPreorderAndInorderTraversal/tests/test.cpp
 )
 
-# Construct Binary Tree from Preorder and Inorder Traversal
 target_link_libraries(
         ConstructBinaryTreeFromPreorderAndInorderTraversal
+        GTest::gtest_main
+)
+
+# Construct Binary Tree from Inorder and Postorder Traversal
+add_executable(ConstructBinaryTreeFromInorderAndPostorderTraversal
+        Medium/ConstructBinaryTreeFromInorderAndPostorderTraversal/include/solution.hpp
+        Medium/ConstructBinaryTreeFromInorderAndPostorderTraversal/tests/test.cpp
+)
+
+target_link_libraries(
+        ConstructBinaryTreeFromInorderAndPostorderTraversal
         GTest::gtest_main
 )
