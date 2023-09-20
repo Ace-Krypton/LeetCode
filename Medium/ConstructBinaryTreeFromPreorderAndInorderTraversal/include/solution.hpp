@@ -16,15 +16,16 @@ struct TreeNode {
 class Solution {
 public:
     static auto build_tree(const std::vector<int32_t> &preorder,
-                                const std::vector<int32_t> &inorder) -> TreeNode* {
+                           const std::vector<int32_t> &inorder) -> TreeNode* {
         auto pre = preorder.begin();
         auto in = inorder.begin();
 
-        std::function<TreeNode*(int32_t)> construct = [&](int32_t stop) -> TreeNode* {
+        std::function<TreeNode*(const int32_t)> construct =
+                [&](const int32_t stop) -> TreeNode* {
             if (pre == preorder.end() || *in == stop) return (TreeNode*)nullptr;
             auto *node = new TreeNode{*(pre++)};
             node->left = construct(node->value);
-            assert (*in == node->value);
+            assert(*in == node->value);
             in++;
             node->right = construct(stop);
             return node;
