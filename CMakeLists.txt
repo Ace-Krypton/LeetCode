@@ -822,3 +822,14 @@ target_link_libraries(
         PathSum
         GTest::gtest_main
 )
+
+# Count Complete Tree Nodes
+add_executable(CountCompleteTreeNodes
+        Easy/CountCompleteTreeNodes/include/solution.hpp
+        Easy/CountCompleteTreeNodes/tests/test.cpp
+)
+
+target_link_libraries(
+        CountCompleteTreeNodes
+        GTest::gtest_main
+)
