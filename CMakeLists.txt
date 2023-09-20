@@ -811,3 +811,14 @@ target_link_libraries(
         ConstructBinaryTreeFromInorderAndPostorderTraversal
         GTest::gtest_main
 )
+
+# Path Sum
+add_executable(PathSum
+        Easy/PathSum/include/solution.hpp
+        Easy/PathSum/tests/test.cpp
+)
+
+target_link_libraries(
+        PathSum
+        GTest::gtest_main
+)
