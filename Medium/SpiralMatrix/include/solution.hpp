@@ -23,13 +23,11 @@ public:
             for (int32_t i = begin_row; i <= end_row; ++i) {
                 result.emplace_back(matrix[i][end_column]);
             } --end_column;
-
             if (begin_row <= end_row) {
                 for (int32_t i = end_column; i >= begin_column; --i) {
                     result.emplace_back(matrix[end_row][i]);
                 }
             } --end_row;
-
             if (begin_column <= end_column) {
                 for (int32_t i = end_row; i >= begin_row; --i) {
                     result.emplace_back(matrix[i][begin_column]);
