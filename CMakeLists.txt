@@ -844,3 +844,14 @@ target_link_libraries(
         RotateImage
         GTest::gtest_main
 )
+
+# Spiral Matrix
+add_executable(SpiralMatrix
+        Medium/SpiralMatrix/include/solution.hpp
+        Medium/SpiralMatrix/tests/test.cpp
+)
+
+target_link_libraries(
+        SpiralMatrix
+        GTest::gtest_main
+)
