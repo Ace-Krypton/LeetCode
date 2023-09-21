@@ -833,3 +833,14 @@ target_link_libraries(
         CountCompleteTreeNodes
         GTest::gtest_main
 )
+
+# Rotate Image
+add_executable(RotateImage
+        Medium/RotateImage/include/solution.hpp
+        Medium/RotateImage/tests/test.cpp
+)
+
+target_link_libraries(
+        RotateImage
+        GTest::gtest_main
+)

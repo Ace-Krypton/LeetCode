@@ -35,7 +35,7 @@ public:
         const int32_t right_height = rh(root);
 
         if (left_height == right_height) {
-            return std::pow(2, left_height) - 1;
+            return static_cast<int32_t>(std::pow(2, left_height) - 1);
         }
 
         return count_nodes(root->left) + count_nodes(root->right) + 1;
