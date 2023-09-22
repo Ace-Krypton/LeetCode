@@ -877,3 +877,14 @@ target_link_libraries(
         GameOfLife
         GTest::gtest_main
 )
+
+# Add Binary
+add_executable(AddBinary
+        Easy/AddBinary/include/solution.hpp
+        Easy/AddBinary/tests/test.cpp
+)
+
+target_link_libraries(
+        AddBinary
+        GTest::gtest_main
+)
