@@ -866,3 +866,14 @@ target_link_libraries(
         SetMatrixZeroes
         GTest::gtest_main
 )
+
+# Game of Life
+add_executable(GameOfLife
+        Medium/GameOfLife/include/solution.hpp
+        Medium/GameOfLife/tests/test.cpp
+)
+
+target_link_libraries(
+        GameOfLife
+        GTest::gtest_main
+)
