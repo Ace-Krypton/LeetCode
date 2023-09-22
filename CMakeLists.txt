@@ -855,3 +855,14 @@ target_link_libraries(
         SpiralMatrix
         GTest::gtest_main
 )
+
+# Set Matrix Zeroes
+add_executable(SetMatrixZeroes
+        Medium/SetMatrixZeroes/include/solution.hpp
+        Medium/SetMatrixZeroes/tests/test.cpp
+)
+
+target_link_libraries(
+        SetMatrixZeroes
+        GTest::gtest_main
+)
