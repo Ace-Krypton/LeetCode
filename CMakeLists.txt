@@ -899,3 +899,14 @@ target_link_libraries(
         ReverseBits
         GTest::gtest_main
 )
+
+# Number of 1 Bits
+add_executable(NumberOf1Bits
+        Easy/NumberOf1Bits/include/solution.hpp
+        Easy/NumberOf1Bits/tests/test.cpp
+)
+
+target_link_libraries(
+        NumberOf1Bits
+        GTest::gtest_main
+)
