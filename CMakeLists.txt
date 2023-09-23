@@ -913,8 +913,8 @@ target_link_libraries(
 
 # Single Number II
 add_executable(SingleNumberII
-        Easy/SingleNumberII/include/solution.hpp
-        Easy/SingleNumberII/tests/test.cpp
+        Medium/SingleNumberII/include/solution.hpp
+        Medium/SingleNumberII/tests/test.cpp
 )
 
 target_link_libraries(
