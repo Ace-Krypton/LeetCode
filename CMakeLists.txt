@@ -910,3 +910,14 @@ target_link_libraries(
         NumberOf1Bits
         GTest::gtest_main
 )
+
+# Single Number II
+add_executable(SingleNumberII
+        Easy/SingleNumberII/include/solution.hpp
+        Easy/SingleNumberII/tests/test.cpp
+)
+
+target_link_libraries(
+        SingleNumberII
+        GTest::gtest_main
+)
