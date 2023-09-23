@@ -8,7 +8,7 @@
 class Solution {
 public:
     static auto full_justify(const std::vector<std::string> &words,
-                                          int32_t max_width) -> std::vector<std::string> {
+                             int32_t max_width) -> std::vector<std::string> {
         std::vector<std::string> res;
         std::vector<std::string> cur;
         std::size_t num_of_letters = 0;

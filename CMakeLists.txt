@@ -932,3 +932,14 @@ target_link_libraries(
         BitwiseANDOfNumbersRange
         GTest::gtest_main
 )
+
+# Find Bottom Left Tree Value
+add_executable(FindBottomLeftTreeValue
+        Medium/FindBottomLeftTreeValue/include/solution.hpp
+        Medium/FindBottomLeftTreeValue/tests/test.cpp
+)
+
+target_link_libraries(
+        FindBottomLeftTreeValue
+        GTest::gtest_main
+)

@@ -4,13 +4,9 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-#include <gtest/gtest.h>
-
-#include <stack>
-#include <vector>
-#include <string>
-#include <unordered_map>
 #include <functional>
+#include <unordered_map>
+#include <gtest/gtest.h>
 
 class Solution {
 public:
