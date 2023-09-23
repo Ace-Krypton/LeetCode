@@ -7,7 +7,7 @@
 
 class Solution {
 public:
-    static auto hamming_weight(uint32_t n) -> int32_t {
+    static auto hamming_weight(uint32_t n) -> size_t {
         size_t count = 0;
 
         while (n > 0) {

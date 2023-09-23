@@ -921,3 +921,14 @@ target_link_libraries(
         SingleNumberII
         GTest::gtest_main
 )
+
+# Bitwise AND of Numbers Range
+add_executable(BitwiseANDOfNumbersRange
+        Medium/BitwiseANDOfNumbersRange/include/solution.hpp
+        Medium/BitwiseANDOfNumbersRange/tests/test.cpp
+)
+
+target_link_libraries(
+        BitwiseANDOfNumbersRange
+        GTest::gtest_main
+)
