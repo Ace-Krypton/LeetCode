@@ -888,3 +888,14 @@ target_link_libraries(
         AddBinary
         GTest::gtest_main
 )
+
+# Reverse Bits
+add_executable(ReverseBits
+        Easy/ReverseBits/include/solution.hpp
+        Easy/ReverseBits/tests/test.cpp
+)
+
+target_link_libraries(
+        ReverseBits
+        GTest::gtest_main
+)
