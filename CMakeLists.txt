@@ -965,3 +965,14 @@ target_link_libraries(
         MergeStringsAlternatively
         GTest::gtest_main
 )
+
+# Greatest Common Divisor of Strings
+add_executable(GreatestCommonDivisorOfStrings
+        Easy/GreatestCommonDivisorOfStrings/include/solution.hpp
+        Easy/GreatestCommonDivisorOfStrings/tests/test.cpp
+)
+
+target_link_libraries(
+        GreatestCommonDivisorOfStrings
+        GTest::gtest_main
+)
