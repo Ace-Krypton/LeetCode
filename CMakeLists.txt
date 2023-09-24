@@ -998,3 +998,14 @@ target_link_libraries(
         CanPlaceFlowers
         GTest::gtest_main
 )
+
+# Reverse Vowels of a String
+add_executable(ReverseVowelsOfAString
+        Easy/ReverseVowelsOfAString/include/solution.hpp
+        Easy/ReverseVowelsOfAString/tests/test.cpp
+)
+
+target_link_libraries(
+        ReverseVowelsOfAString
+        GTest::gtest_main
+)
