@@ -20,7 +20,7 @@ public:
                          const int32_t target) -> std::vector<std::vector<int32_t>> {
         std::vector<std::vector<int32_t>> result;
         std::vector<int32_t> temp;
-        helper(root,target,temp,result);
+        helper(root, target, temp, result);
         return result;
     }
 

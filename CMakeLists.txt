@@ -954,3 +954,14 @@ target_link_libraries(
         PathSumII
         GTest::gtest_main
 )
+
+# Merge Strings Alternately
+add_executable(MergeStringsAlternatively
+        Easy/MergeStringsAlternatively/include/solution.hpp
+        Easy/MergeStringsAlternatively/tests/test.cpp
+)
+
+target_link_libraries(
+        MergeStringsAlternatively
+        GTest::gtest_main
+)
