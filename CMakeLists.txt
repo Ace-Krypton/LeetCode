@@ -943,3 +943,14 @@ target_link_libraries(
         FindBottomLeftTreeValue
         GTest::gtest_main
 )
+
+# Path Sum II
+add_executable(PathSumII
+        Medium/PathSumII/include/solution.hpp
+        Medium/PathSumII/tests/test.cpp
+)
+
+target_link_libraries(
+        PathSumII
+        GTest::gtest_main
+)
