@@ -987,3 +987,14 @@ target_link_libraries(
         KidsWithTheGreatestNumberOfCandies
         GTest::gtest_main
 )
+
+# Can Place Flowers
+add_executable(CanPlaceFlowers
+        Easy/CanPlaceFlowers/include/solution.hpp
+        Easy/CanPlaceFlowers/tests/test.cpp
+)
+
+target_link_libraries(
+        CanPlaceFlowers
+        GTest::gtest_main
+)
