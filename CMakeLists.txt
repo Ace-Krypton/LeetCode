@@ -976,3 +976,14 @@ target_link_libraries(
         GreatestCommonDivisorOfStrings
         GTest::gtest_main
 )
+
+# Kids With the Greatest Number of Candies
+add_executable(KidsWithTheGreatestNumberOfCandies
+        Easy/KidsWithTheGreatestNumberOfCandies/include/solution.hpp
+        Easy/KidsWithTheGreatestNumberOfCandies/tests/test.cpp
+)
+
+target_link_libraries(
+        KidsWithTheGreatestNumberOfCandies
+        GTest::gtest_main
+)

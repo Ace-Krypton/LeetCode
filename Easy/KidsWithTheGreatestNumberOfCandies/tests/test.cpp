@@ -6,21 +6,21 @@ protected:
 };
 
 TEST_F(KidsWithTheGreatestNumberOfCandies, FirstTest) {
-    std::string jewels = "aA";
-    std::string stones = "aAAbbbb";
+    std::vector<int32_t> candies = {2, 3, 5, 1, 3};
+    int32_t extra_candies = 3;
 
-    std::size_t result = Solution::kids_with_candies(jewels, stones);
-    std::size_t expected = 3;
+    std::vector<bool> result = Solution::kids_with_candies(candies, extra_candies);
+    std::vector<bool> expected = {true, true, true, false, true};
 
     ASSERT_EQ(result, expected);
 }
 
 TEST_F(KidsWithTheGreatestNumberOfCandies, SecondTest) {
-    std::string jewels = "z";
-    std::string stones = "ZZ";
+    std::vector<int32_t> candies = {4, 2, 1, 1, 2};
+    int32_t extra_candies = 1;
 
-    std::size_t result = Solution::kids_with_candies(jewels, stones);
-    std::size_t expected = 0;
+    std::vector<bool> result = Solution::kids_with_candies(candies, extra_candies);
+    std::vector<bool> expected = {true, false, false, false, false};
 
     ASSERT_EQ(result, expected);
 }
