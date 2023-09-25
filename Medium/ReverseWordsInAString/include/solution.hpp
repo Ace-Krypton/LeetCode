@@ -1,5 +1,6 @@
 #pragma once
 
+#include <stack>
 #include <vector>
 #include <iostream>
 #include <algorithm>
@@ -34,7 +35,7 @@ public:
         r_trim(str);
     }
 
-    static auto reverse_words(const std::string &words) -> std::string {
+    [[maybe_unused]] static auto reverse_words_tle(const std::string &words) -> std::string {
         std::string word;
         std::stringstream ss(words);
         std::vector<std::string> reversed;
@@ -54,6 +55,28 @@ public:
         }
 
         trim(result);
+
+        return result;
+    }
+
+    static auto reverse_words(const std::string &words) -> std::string {
+        std::string result;
+        size_t current = 0;
+        size_t end = words.length();
+
+        while (current < end) {
+            while (current < end && words[current] == ' ') ++current;
+            if (current >= end) break;
+            size_t next = current + 1;
+            while (next < end && words[next] != ' ') ++next;
+            std::string sub = words.substr(current, next - current);
+            if (!result.empty()) {
+                std::stringstream ss;
+                ss << sub << " " << result;
+                result = ss.str();
+            } else result = sub;
+            current = next + 1;
+        }
 
         return result;
     }
