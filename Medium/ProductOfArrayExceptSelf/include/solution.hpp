@@ -27,7 +27,8 @@ public:
         return output;
     }
 
-    static auto product_except_self_j(std::vector<int32_t> &nums) -> std::vector<int32_t> {
+    [[maybe_unused]] static auto product_except_self_best(
+            std::vector<int32_t> &nums) -> std::vector<int32_t> {
         std::vector<int32_t> output(nums.size(), 1);
 
         int32_t left_product = 1;
