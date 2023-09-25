@@ -22,7 +22,8 @@ public:
         return false;
     }
 
-    static auto increasing_triplet(const std::vector<int32_t> &nums) -> bool {
+    [[maybe_unused]] static auto increasing_triplet_On_Space(
+            const std::vector<int32_t> &nums) -> bool {
         if (nums.size() < 3) return false;
 
         std::vector<int32_t> left_min(nums.size());
@@ -41,6 +42,19 @@ public:
             if (left_min[i] < nums[i] && nums[i] < right_max[i]) {
                 return true;
             }
+        }
+
+        return false;
+    }
+
+    static auto increasing_triplet(const std::vector<int32_t> &nums) -> bool {
+        int32_t first = std::numeric_limits<int32_t>::max();
+        int32_t second = std::numeric_limits<int32_t>::max();
+
+        for (const auto &num : nums) {
+            if (num <= first) first = num;
+            else if (num <= second) second = num;
+            else return true;
         }
 
         return false;
