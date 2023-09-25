@@ -1,11 +1,11 @@
 #include "../include/solution.hpp"
 
-class GenerateParentheses : public ::testing::Test {
+class GroupAnagrams : public ::testing::Test {
 protected:
-    ~GenerateParentheses() override = default;
+    ~GroupAnagrams() override = default;
 };
 
-TEST_F(GenerateParentheses, FirstTest) {
+TEST_F(GroupAnagrams, FirstTest) {
     std::vector<std::string> strs =
             {"eat", "tea", "tan", "ate", "nat", "bat"};
 
@@ -17,7 +17,7 @@ TEST_F(GenerateParentheses, FirstTest) {
     ASSERT_EQ(result, expected);
 }
 
-TEST_F(GenerateParentheses, SecondTest) {
+TEST_F(GroupAnagrams, SecondTest) {
     std::vector<std::string> strs = { };
 
     std::vector<std::vector<std::string>> result =
@@ -27,7 +27,7 @@ TEST_F(GenerateParentheses, SecondTest) {
     ASSERT_EQ(result, expected);
 }
 
-TEST_F(GenerateParentheses, ThirdTest) {
+TEST_F(GroupAnagrams, ThirdTest) {
     std::vector<std::string> strs = {"a"};
 
     std::vector<std::vector<std::string>> result =

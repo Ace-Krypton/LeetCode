@@ -1009,3 +1009,14 @@ target_link_libraries(
         ReverseVowelsOfAString
         GTest::gtest_main
 )
+
+# Increasing Triplet Subsequence
+add_executable(IncreasingTripletSubsequence
+        Medium/IncreasingTripletSubsequence/include/solution.hpp
+        Medium/IncreasingTripletSubsequence/tests/test.cpp
+)
+
+target_link_libraries(
+        IncreasingTripletSubsequence
+        GTest::gtest_main
+)
