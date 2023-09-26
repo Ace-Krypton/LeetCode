@@ -1020,3 +1020,14 @@ target_link_libraries(
         IncreasingTripletSubsequence
         GTest::gtest_main
 )
+
+# String Compression
+add_executable(StringCompression
+        Medium/StringCompression/include/solution.hpp
+        Medium/StringCompression/tests/test.cpp
+)
+
+target_link_libraries(
+        StringCompression
+        GTest::gtest_main
+)
