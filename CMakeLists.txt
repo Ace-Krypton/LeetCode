@@ -1031,3 +1031,14 @@ target_link_libraries(
         StringCompression
         GTest::gtest_main
 )
+
+# Move Zeroes
+add_executable(MoveZeroes
+        Easy/MoveZeroes/include/solution.hpp
+        Easy/MoveZeroes/tests/test.cpp
+)
+
+target_link_libraries(
+        MoveZeroes
+        GTest::gtest_main
+)
