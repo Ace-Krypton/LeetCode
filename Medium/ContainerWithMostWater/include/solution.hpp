@@ -19,16 +19,15 @@ public:
         return output;
     }
 
-    static auto max_area(std::vector<int32_t> &height) -> int32_t {
+    static auto max_area(const std::vector<int32_t> &height) -> int32_t {
         int32_t output = 0;
-        int32_t left = 0;
-        auto right = static_cast<int32_t>(height.size() - 1);
+        int32_t L = 0;
+        auto R = static_cast<int32_t>(height.size() - 1);
 
-        while (left < right) {
-            output = std::max(output,
-                              std::min(height[left], height[right]) * (right - left));
-            if (height[left] < height[right]) left++;
-            else right--;
+        while (L < R) {
+            output = std::max(output, std::min(height[L], height[R]) * (R - L));
+            if (height[L] < height[R]) ++L;
+            else --R;
         }
 
         return output;
