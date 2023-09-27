@@ -1042,3 +1042,14 @@ target_link_libraries(
         MoveZeroes
         GTest::gtest_main
 )
+
+# Max Number of K-Sum Pairs
+add_executable(MaxNumberOfK-SumPairs
+        Medium/MaxNumberOfK-SumPairs/include/solution.hpp
+        Medium/MaxNumberOfK-SumPairs/tests/test.cpp
+)
+
+target_link_libraries(
+        MaxNumberOfK-SumPairs
+        GTest::gtest_main
+)
