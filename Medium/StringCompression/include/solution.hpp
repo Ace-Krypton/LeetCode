@@ -7,8 +7,8 @@
 
 class Solution {
 public:
-    static auto compress(std::vector<char> &chars) -> size_t {
-        std::unordered_map<char, int> mp;
+    [[maybe_unused]] static auto compress_space(std::vector<char> &chars) -> size_t {
+        std::unordered_map<char, size_t> mp;
         std::string str;
 
         for (size_t i = 0; i < chars.size(); ++i) {
@@ -31,5 +31,32 @@ public:
         }
 
         return str.length();
+    }
+
+    static auto compress(std::vector<char> &chars) -> size_t {
+        size_t index = 0;
+        size_t current = 0;
+
+        while (current < chars.size()) {
+            size_t next = current;
+
+            while (next < chars.size()
+                && chars[next] == chars[current]) {
+                ++next;
+            }
+
+            chars[index++] = chars[current];
+
+            if (next - current > 1) {
+                std::string count = std::to_string(next - current);
+                for (const char &ch : count) {
+                    chars[index++] = ch;
+                }
+            }
+
+            current = next;
+        }
+
+        return index;
     }
 };
