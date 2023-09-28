@@ -1064,3 +1064,14 @@ target_link_libraries(
         MaximumAverageSubarrayI
         GTest::gtest_main
 )
+
+# Maximum SubArray
+add_executable(MaximumSubArray
+        Medium/MaximumSubArray/include/solution.hpp
+        Medium/MaximumSubArray/tests/test.cpp
+)
+
+target_link_libraries(
+        MaximumSubArray
+        GTest::gtest_main
+)
