@@ -1053,3 +1053,14 @@ target_link_libraries(
         MaxNumberOfK-SumPairs
         GTest::gtest_main
 )
+
+# Maximum Average Subarray I
+add_executable(MaximumAverageSubarrayI
+        Easy/MaximumAverageSubarrayI/include/solution.hpp
+        Easy/MaximumAverageSubarrayI/tests/test.cpp
+)
+
+target_link_libraries(
+        MaximumAverageSubarrayI
+        GTest::gtest_main
+)
