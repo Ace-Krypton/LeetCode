@@ -7,7 +7,7 @@
 
 class Solution {
 public:
-    static auto longest_ones(const std::vector<int32_t > &nums, int32_t k) -> int32_t {
+    static auto longest_ones(const std::vector<int32_t > &nums, int32_t k) -> size_t {
         size_t max_ones = 0, left = 0;
 
         for (size_t right = 0; right < nums.size(); ++right) {

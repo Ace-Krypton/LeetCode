@@ -1097,3 +1097,14 @@ target_link_libraries(
         MaxConsecutiveOnesIII
         GTest::gtest_main
 )
+
+# Longest Subarray of 1's After Deleting One Element
+add_executable(LongestSubArrayOfOnesAfterDeletingOneElement
+        Medium/LongestSubArrayOfOnesAfterDeletingOneElement/include/solution.hpp
+        Medium/LongestSubArrayOfOnesAfterDeletingOneElement/tests/test.cpp
+)
+
+target_link_libraries(
+        LongestSubArrayOfOnesAfterDeletingOneElement
+        GTest::gtest_main
+)
