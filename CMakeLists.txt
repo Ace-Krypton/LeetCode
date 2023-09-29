@@ -1075,3 +1075,14 @@ target_link_libraries(
         MaximumSubArray
         GTest::gtest_main
 )
+
+# Maximum Number of Vowels in a Substring of Given Length
+add_executable(MaximumNumberOfVowelsInASubstringOfGivenLength
+        Medium/MaximumNumberOfVowelsInASubstringOfGivenLength/include/solution.hpp
+        Medium/MaximumNumberOfVowelsInASubstringOfGivenLength/tests/test.cpp
+)
+
+target_link_libraries(
+        MaximumNumberOfVowelsInASubstringOfGivenLength
+        GTest::gtest_main
+)
