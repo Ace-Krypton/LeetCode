@@ -1086,3 +1086,14 @@ target_link_libraries(
         MaximumNumberOfVowelsInASubstringOfGivenLength
         GTest::gtest_main
 )
+
+# Max Consecutive Ones III
+add_executable(MaxConsecutiveOnesIII
+        Medium/MaxConsecutiveOnesIII/include/solution.hpp
+        Medium/MaxConsecutiveOnesIII/tests/test.cpp
+)
+
+target_link_libraries(
+        MaxConsecutiveOnesIII
+        GTest::gtest_main
+)
