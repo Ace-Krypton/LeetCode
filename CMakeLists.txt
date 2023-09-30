@@ -1130,3 +1130,14 @@ target_link_libraries(
         FindPivotIndex
         GTest::gtest_main
 )
+
+# Find the Difference of Two Arrays
+add_executable(FindTheDifferenceOfTwoArrays
+        Easy/FindTheDifferenceOfTwoArrays/include/solution.hpp
+        Easy/FindTheDifferenceOfTwoArrays/tests/test.cpp
+)
+
+target_link_libraries(
+        FindTheDifferenceOfTwoArrays
+        GTest::gtest_main
+)
