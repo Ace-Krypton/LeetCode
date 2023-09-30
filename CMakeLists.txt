@@ -1141,3 +1141,14 @@ target_link_libraries(
         FindTheDifferenceOfTwoArrays
         GTest::gtest_main
 )
+
+# Unique Number of Occurrences
+add_executable(UniqueNumberOfOccurrences
+        Easy/UniqueNumberOfOccurrences/include/solution.hpp
+        Easy/UniqueNumberOfOccurrences/tests/test.cpp
+)
+
+target_link_libraries(
+        UniqueNumberOfOccurrences
+        GTest::gtest_main
+)
