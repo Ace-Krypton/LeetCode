@@ -1108,3 +1108,14 @@ target_link_libraries(
         LongestSubArrayOfOnesAfterDeletingOneElement
         GTest::gtest_main
 )
+
+# Find the Highest Altitude
+add_executable(FindTheHighestAltitude
+        Easy/FindTheHighestAltitude/include/solution.hpp
+        Easy/FindTheHighestAltitude/tests/test.cpp
+)
+
+target_link_libraries(
+        FindTheHighestAltitude
+        GTest::gtest_main
+)
