@@ -1163,3 +1163,14 @@ target_link_libraries(
         DetermineIfTwoStringsAreClose
         GTest::gtest_main
 )
+
+# Equal Row and Column Pairs
+add_executable(EqualRowAndColumnPairs
+        Medium/EqualRowAndColumnPairs/include/solution.hpp
+        Medium/EqualRowAndColumnPairs/tests/test.cpp
+)
+
+target_link_libraries(
+        EqualRowAndColumnPairs
+        GTest::gtest_main
+)
