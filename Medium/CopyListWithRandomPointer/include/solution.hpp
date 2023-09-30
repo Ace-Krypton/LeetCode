@@ -24,7 +24,7 @@ public:
 
         temp = head;
 
-        while(temp){
+        while (temp){
             Node *curr = mappings[temp];
             Node *next = mappings[temp->next];
             Node*r = mappings[temp->random];

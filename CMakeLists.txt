@@ -1152,3 +1152,14 @@ target_link_libraries(
         UniqueNumberOfOccurrences
         GTest::gtest_main
 )
+
+# Determine if Two Strings Are Close
+add_executable(DetermineIfTwoStringsAreClose
+        Medium/DetermineIfTwoStringsAreClose/include/solution.hpp
+        Medium/DetermineIfTwoStringsAreClose/tests/test.cpp
+)
+
+target_link_libraries(
+        DetermineIfTwoStringsAreClose
+        GTest::gtest_main
+)
