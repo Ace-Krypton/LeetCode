@@ -28,7 +28,7 @@ public:
                 }}
         };
 
-        for (std::size_t i = 0; i < s.size(); ++i) {
+        for (size_t i = 0; i < s.size(); ++i) {
             if (s[i] >= '0' && s[i] <= '9') {
                 int32_t num = 0;
 
