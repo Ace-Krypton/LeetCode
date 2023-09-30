@@ -1119,3 +1119,14 @@ target_link_libraries(
         FindTheHighestAltitude
         GTest::gtest_main
 )
+
+# Find Pivot Index
+add_executable(FindPivotIndex
+        Easy/FindPivotIndex/include/solution.hpp
+        Easy/FindPivotIndex/tests/test.cpp
+)
+
+target_link_libraries(
+        FindPivotIndex
+        GTest::gtest_main
+)

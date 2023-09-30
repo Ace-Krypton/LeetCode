@@ -1,11 +1,11 @@
 #include "../include/solution.hpp"
 
-class ContainsDuplicateII : public ::testing::Test {
+class FindTheHighestAltitude : public ::testing::Test {
 protected:
-    ~ContainsDuplicateII() override = default;
+    ~FindTheHighestAltitude() override = default;
 };
 
-TEST_F(ContainsDuplicateII, FirstTest) {
+TEST_F(FindTheHighestAltitude, FirstTest) {
     std::vector<int32_t> nums = {-5, 1, 5, 0, -7};
 
     int32_t result = Solution::largest_altitude(nums);
@@ -14,7 +14,7 @@ TEST_F(ContainsDuplicateII, FirstTest) {
     ASSERT_EQ(result, expected);
 }
 
-TEST_F(ContainsDuplicateII, SecondTest) {
+TEST_F(FindTheHighestAltitude, SecondTest) {
     std::vector<int32_t> nums = {-4, -3, -2, -1, 4, 3, 2};
 
     int32_t result = Solution::largest_altitude(nums);
