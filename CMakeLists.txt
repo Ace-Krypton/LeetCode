@@ -1174,3 +1174,14 @@ target_link_libraries(
         EqualRowAndColumnPairs
         GTest::gtest_main
 )
+
+# Reverse Words in a String III
+add_executable(ReverseWordsInAStringIII
+        Easy/ReverseWordsInAStringIII/include/solution.hpp
+        Easy/ReverseWordsInAStringIII/tests/test.cpp
+)
+
+target_link_libraries(
+        ReverseWordsInAStringIII
+        GTest::gtest_main
+)
