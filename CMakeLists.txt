@@ -1185,3 +1185,14 @@ target_link_libraries(
         ReverseWordsInAStringIII
         GTest::gtest_main
 )
+
+# Removing Stars From a String
+add_executable(RemovingStarsFromAString
+        Medium/RemovingStarsFromAString/include/solution.hpp
+        Medium/RemovingStarsFromAString/tests/test.cpp
+)
+
+target_link_libraries(
+        RemovingStarsFromAString
+        GTest::gtest_main
+)
