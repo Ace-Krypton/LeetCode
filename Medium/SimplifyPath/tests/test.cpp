@@ -1,11 +1,11 @@
 #include "../include/solution.hpp"
 
-class RotateArray : public ::testing::Test {
+class SimplifyPath : public ::testing::Test {
 protected:
-    ~RotateArray() override = default;
+    ~SimplifyPath() override = default;
 };
 
-TEST_F(RotateArray, FirstTest) {
+TEST_F(SimplifyPath, FirstTest) {
     std::string path = "/home/";
 
     std::string result = Solution::simplify_path(path);
@@ -14,7 +14,7 @@ TEST_F(RotateArray, FirstTest) {
     ASSERT_EQ(result, expected);
 }
 
-TEST_F(RotateArray, SecondTest) {
+TEST_F(SimplifyPath, SecondTest) {
     std::string path = "/../";
 
     std::string result = Solution::simplify_path(path);
@@ -23,7 +23,7 @@ TEST_F(RotateArray, SecondTest) {
     ASSERT_EQ(result, expected);
 }
 
-TEST_F(RotateArray, ThirdTest) {
+TEST_F(SimplifyPath, ThirdTest) {
     std::string path = "/home//foo/";
 
     std::string result = Solution::simplify_path(path);

@@ -1196,3 +1196,14 @@ target_link_libraries(
         RemovingStarsFromAString
         GTest::gtest_main
 )
+
+# Asteroid Collision
+add_executable(AsteroidCollision
+        Medium/AsteroidCollision/include/solution.hpp
+        Medium/AsteroidCollision/tests/test.cpp
+)
+
+target_link_libraries(
+        AsteroidCollision
+        GTest::gtest_main
+)
