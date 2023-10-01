@@ -1207,3 +1207,14 @@ target_link_libraries(
         AsteroidCollision
         GTest::gtest_main
 )
+
+# Decode String
+add_executable(DecodeString
+        Medium/DecodeString/include/solution.hpp
+        Medium/DecodeString/tests/test.cpp
+)
+
+target_link_libraries(
+        DecodeString
+        GTest::gtest_main
+)
