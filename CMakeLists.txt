@@ -1229,3 +1229,14 @@ target_link_libraries(
         NumberOfRecentCalls
         GTest::gtest_main
 )
+
+# Dota 2 Senate
+add_executable(Dota2Senate
+        Medium/Dota2Senate/include/solution.hpp
+        Medium/Dota2Senate/tests/test.cpp
+)
+
+target_link_libraries(
+        Dota2Senate
+        GTest::gtest_main
+)
