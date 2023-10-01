@@ -1218,3 +1218,14 @@ target_link_libraries(
         DecodeString
         GTest::gtest_main
 )
+
+# Number of Recent Calls
+add_executable(NumberOfRecentCalls
+        Easy/NumberOfRecentCalls/include/solution.hpp
+        Easy/NumberOfRecentCalls/tests/test.cpp
+)
+
+target_link_libraries(
+        NumberOfRecentCalls
+        GTest::gtest_main
+)
