@@ -1,9 +1,9 @@
 #pragma once
 
 #include <vector>
-#include <iostream>
 #include <ranges>
 #include <numeric>
+#include <iostream>
 #include <algorithm>
 #include <gtest/gtest.h>
 

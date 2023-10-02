@@ -1240,3 +1240,14 @@ target_link_libraries(
         Dota2Senate
         GTest::gtest_main
 )
+
+# Remove Colored Pieces if Both Neighbors are the Same Color
+add_executable(RemoveColoredPiecesIfBothNeighborsAreTheSameColor
+        Medium/RemoveColoredPiecesIfBothNeighborsAreTheSameColor/include/solution.hpp
+        Medium/RemoveColoredPiecesIfBothNeighborsAreTheSameColor/tests/test.cpp
+)
+
+target_link_libraries(
+        RemoveColoredPiecesIfBothNeighborsAreTheSameColor
+        GTest::gtest_main
+)
