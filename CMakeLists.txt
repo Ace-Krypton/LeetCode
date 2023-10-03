@@ -1251,3 +1251,25 @@ target_link_libraries(
         RemoveColoredPiecesIfBothNeighborsAreTheSameColor
         GTest::gtest_main
 )
+
+# Delete the Middle Node of a Linked List
+add_executable(DeleteTheMiddleNodeOfALinkedList
+        Medium/DeleteTheMiddleNodeOfALinkedList/include/solution.hpp
+        Medium/DeleteTheMiddleNodeOfALinkedList/tests/test.cpp
+)
+
+target_link_libraries(
+        DeleteTheMiddleNodeOfALinkedList
+        GTest::gtest_main
+)
+
+# Number of Good Pairs
+add_executable(NumberOfGoodPairs
+        Easy/NumberOfGoodPairs/include/solution.hpp
+        Easy/NumberOfGoodPairs/tests/test.cpp
+)
+
+target_link_libraries(
+        NumberOfGoodPairs
+        GTest::gtest_main
+)
