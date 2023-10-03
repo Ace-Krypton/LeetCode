@@ -1273,3 +1273,14 @@ target_link_libraries(
         NumberOfGoodPairs
         GTest::gtest_main
 )
+
+# Odd Even Linked List
+add_executable(OddEvenLinkedList
+        Medium/OddEvenLinkedList/include/solution.hpp
+        Medium/OddEvenLinkedList/tests/test.cpp
+)
+
+target_link_libraries(
+        OddEvenLinkedList
+        GTest::gtest_main
+)
