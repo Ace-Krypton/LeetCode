@@ -1284,3 +1284,25 @@ target_link_libraries(
         OddEvenLinkedList
         GTest::gtest_main
 )
+
+# Reverse Linked List
+add_executable(ReverseLinkedList
+        Easy/ReverseLinkedList/include/solution.hpp
+        Easy/ReverseLinkedList/tests/test.cpp
+)
+
+target_link_libraries(
+        ReverseLinkedList
+        GTest::gtest_main
+)
+
+# Maximum Twin Sum of a Linked List
+add_executable(MaximumTwinSumOfALinkedList
+        Medium/MaximumTwinSumOfALinkedList/include/solution.hpp
+        Medium/MaximumTwinSumOfALinkedList/tests/test.cpp
+)
+
+target_link_libraries(
+        MaximumTwinSumOfALinkedList
+        GTest::gtest_main
+)

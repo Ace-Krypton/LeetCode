@@ -21,7 +21,7 @@ public:
         ListNode *prev = dummy;
         ListNode *curr = head;
 
-        for (std::size_t i = 1; i < left; ++i) {
+        for (size_t i = 1; i < left; ++i) {
             prev = curr;
             curr = curr->next;
         }
