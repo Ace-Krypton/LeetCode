@@ -1306,3 +1306,14 @@ target_link_libraries(
         MaximumTwinSumOfALinkedList
         GTest::gtest_main
 )
+
+# Design HashMap
+add_executable(DesignHashMap
+        Easy/DesignHashMap/include/solution.hpp
+        Easy/DesignHashMap/tests/test.cpp
+)
+
+target_link_libraries(
+        DesignHashMap
+        GTest::gtest_main
+)
