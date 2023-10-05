@@ -9,7 +9,7 @@ struct TreeNode {
     const int32_t value;
     TreeNode *left;
     TreeNode *right;
-    explicit TreeNode(int32_t value) :
+    explicit TreeNode(const int32_t value) :
         value(value), left(nullptr), right(nullptr) { }
 };
 

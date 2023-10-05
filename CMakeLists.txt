@@ -1328,3 +1328,14 @@ target_link_libraries(
         MajorityElementII
         GTest::gtest_main
 )
+
+# Leaf-Similar Trees
+add_executable(Leaf-SimilarTrees
+        Easy/Leaf-SimilarTrees/include/solution.hpp
+        Easy/Leaf-SimilarTrees/tests/test.cpp
+)
+
+target_link_libraries(
+        Leaf-SimilarTrees
+        GTest::gtest_main
+)
