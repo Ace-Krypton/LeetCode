@@ -1339,3 +1339,14 @@ target_link_libraries(
         Leaf-SimilarTrees
         GTest::gtest_main
 )
+
+# Count Good Nodes in Binary Tree
+add_executable(CountGoodNodesInBinaryTree
+        Medium/CountGoodNodesInBinaryTree/include/solution.hpp
+        Medium/CountGoodNodesInBinaryTree/tests/test.cpp
+)
+
+target_link_libraries(
+        CountGoodNodesInBinaryTree
+        GTest::gtest_main
+)
