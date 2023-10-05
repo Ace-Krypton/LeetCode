@@ -17,8 +17,7 @@ public:
             if (word.size() + cur.size() + num_of_letters > max_width) {
                 for (int i = 0; i < max_width - num_of_letters; i++) {
                     cur[i % (cur.size() - 1 ? cur.size() - 1 : 1)] += ' ';
-                }
-                res.emplace_back("");
+                } res.emplace_back();
                 for (const std::string &s : cur) res.back() += s;
                 cur.clear();
                 num_of_letters = 0;

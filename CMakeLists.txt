@@ -1317,3 +1317,14 @@ target_link_libraries(
         DesignHashMap
         GTest::gtest_main
 )
+
+# Majority Element II
+add_executable(MajorityElementII
+        Medium/MajorityElementII/include/solution.hpp
+        Medium/MajorityElementII/tests/test.cpp
+)
+
+target_link_libraries(
+        MajorityElementII
+        GTest::gtest_main
+)
